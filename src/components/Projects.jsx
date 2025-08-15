@@ -33,12 +33,37 @@ Impact:
     {
       name: "MindfulMe Wellness",
       link: "https://github.com/yourgithub/mindfulme",
-      tech: ["React", "FastAPI", "MongoDB Atlas", "Authentication", "2FA", "CI/CD"],
+      Role: ["Full Stack Developer"],
+      tech: ["React", "Tailwind CSS", "FastAPI", "REST API", "ZenQuotes API", "MongoDB Atlas", "Authentication", "2FA", "CI/CD"],
       image: "https://github.com/Saketmishra565/My-Portfolio-2/blob/main/public/mindfulme_screenshot.png?raw=true",
-      description:
-        "Mental wellness web app with features like mood tracking, reminders, motivational quotes, secure login with 2FA, and CI/CD for continuous delivery."
+      description: `Developed a responsive mental health web application for mood tracking, reminders, and progress analytics. Built reusable UI components using React and styled the interface with Tailwind CSS. Integrated FastAPI backend to handle CRUD operations for mood entries, reminders, and user profiles. Implemented RESTful APIs to store and retrieve user data securely. Designed a custom reminder system with support for daily and one-time events, including edit and delete functionality. Created interactive mood tracking interface with mood selection, trigger tags, and daily note input. Displayed weekly mood trends and user statistics using data visualization components. Integrated ZenQuotes API to display motivational quotes with a refresh feature. Captured user profile data across health, lifestyle, and personal attributes for personalized insights. Ensured mobile responsiveness, accessibility, and clean user experience across all devices.`
     },
   ];
+
+  // 🎨 Tech tag color mapping
+  const techColors = {
+    "GPT-4": "bg-purple-200 text-purple-800",
+    "DALL·E": "bg-yellow-200 text-yellow-800",
+    "ElevenLabs": "bg-blue-200 text-blue-800",
+    "Docker": "bg-cyan-200 text-cyan-800",
+    "Kubernetes": "bg-green-200 text-green-800",
+    "AWS S3": "bg-orange-200 text-orange-800",
+    "YouTube API": "bg-red-200 text-red-800",
+    "PowerBI": "bg-pink-200 text-pink-800",
+    "React": "bg-sky-200 text-sky-800",
+    "Tailwind CSS": "bg-teal-200 text-teal-800",
+    "TailwindCSS": "bg-teal-300 text-teal-900",
+    "EmailJS": "bg-indigo-200 text-indigo-800",
+    "FastAPI": "bg-lime-200 text-lime-800",
+    "REST API": "bg-green-100 text-green-700",
+    "ZenQuotes API": "bg-amber-100 text-amber-800",
+    "MongoDB": "bg-emerald-200 text-emerald-800",
+    "MongoDB Atlas": "bg-emerald-300 text-emerald-900",
+    "JWT Auth": "bg-zinc-200 text-zinc-800",
+    "Authentication": "bg-gray-200 text-gray-800",
+    "2FA": "bg-fuchsia-200 text-fuchsia-800",
+    "CI/CD": "bg-blue-300 text-blue-900",
+  };
 
   return (
     <section id="projects" className="py-16 px-4 bg-white">
@@ -83,7 +108,9 @@ Impact:
                 {p.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm border border-gray-300 shadow-sm"
+                    className={`px-3 py-1 rounded-full text-sm font-semibold shadow-sm ${
+                      techColors[tech] || "bg-gray-100 text-gray-800"
+                    }`}
                   >
                     {tech}
                   </span>

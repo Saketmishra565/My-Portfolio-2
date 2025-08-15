@@ -9,6 +9,9 @@ import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import WorkExperience from "./components/WorkExperience";
+import PracticeProjects from "./components/PracticeProjects";
+
+
 
 function App() {
   useEffect(() => {
@@ -22,10 +25,12 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <PracticeProjects />
       <Contact />
       <Footer />
     </div>
   );
 }
+
 
 export default App;
