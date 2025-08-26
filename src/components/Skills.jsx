@@ -2,26 +2,27 @@ import React from "react";
 import { FaReact, FaJs, FaPython, FaGitAlt } from "react-icons/fa";
 import { SiFastapi, SiMongodb, SiTailwindcss, SiVercel } from "react-icons/si";
 
-// Work Experience Data
+// Work Experience Data (UPDATED)
 const experiences = [
   {
-    role: "Software Engineer",
-    company: "Ultraxpert Pvt. Ltd. (Remote)",
-    duration: "Jan 2024 – Present",
-    description: `Built a FastAPI backend to manage users, reminders, mood tracking, and journaling features.
-Integrated OpenAI GPT-4 API with LangChain for chat-based therapy assistance.
-Designed RAG pipeline with a custom knowledge base using local PDF content.
-Used async API calls with httpx, background tasks, and WebSocket integration.
-Tracked LLM usage and logged errors with real-time monitoring.`,
+    role: "Python Django Developer",
+    company: "UltraCreation IT Solutions",
+    duration: "2024 – 2025",
+    description: `Worked on portal.ultraxpert.in, an online consultation platform.
+Developed modules for expert skills management and test connections with the OpenAI Turbo model.
+Built backend features using Python, Django, and Django REST Framework.
+Integrated OpenAI APIs for real-time AI responses.
+Collaborated with cross-functional teams to enhance platform performance and user experience.`,
   },
   {
-    role: "Developer – Support Platform",
-    company: "Ultraxpert",
-    duration: "890 Days",
-    description: `Developed a global IT platform to connect professionals.
-Built systems with Python, Django, REST APIs, Docker.
-Integrated OpenAI and Razorpay for knowledge + payment.
-Led creation of collaborative & scalable backend infrastructure.`,
+    role: "Software Engineer",
+    company: "Ultraxpert Pvt. Ltd.",
+    duration: "Jan 2025 – Present",
+    description: `Built FastAPI backend for users, reminders, mood tracking, and journaling features.
+Integrated GPT-4 via LangChain for an AI therapy chatbot.
+Developed RAG pipelines using local PDF content for contextual AI responses.
+Implemented async APIs, background tasks, and WebSocket communication.
+Monitored and logged LLM usage and handled error tracking for better reliability.`,
   },
 ];
 
