@@ -3,19 +3,33 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
-      name: "AI SEO Video Automation",
+      name: "Blackhat SEO – AI-Powered SEO & Multimedia Automation System",
       link: "#",
-      tech: ["GPT-4", "DALL·E", "ElevenLabs", "Docker", "Kubernetes", "AWS S3", "YouTube API", "PowerBI"],
-      description: `• Automated blog generation using GPT-4 with keyword research and backlinks.
-• Developed website replicator using Puppeteer and SEO backlinks (Stocklinks).
-• Built AI-powered video generation pipeline (GPT → DALL·E → Voiceover → YouTube).
-• Used PowerBI to auto-generate CTR, views, ranking reports.
-• Embedded SEO metadata (schema.org, transcripts) for improved rankings.
+      tech: ["GPT-4", "Gemini Flash 2.0", "Gemini Flash 2.5", "Gemini Pro 2.5", "Gemini Flash Live", "Semrush", "Google Search Console", "Puppeteer", "DALL·E", "PowerBI", "YouTube API"],
+      description: `• Automated blog creation using GPT-4, Gemini Flash 2.0, Gemini Flash 2.5, Gemini Pro 2.5, Gemini Flash Live for enhanced content generation.
+• Integrated Semrush and Google Search Console for keyword research, SEO analytics, and performance tracking.
+• Developed SEO scheduling and backlinks generation pipeline.
+• Built a website replicator using Puppeteer with SEO embedding capabilities.
+• Created an AI video pipeline (GPT → DALL·E → Voice → YouTube).
+• Designed PowerBI dashboards for tracking views, CTR, and SERP rankings.
+• Embedded SEO metadata for improved search visibility.`
+    },
+    {
+      name: "Mood Tracker Mobile Application",
+      link: "#",
+      tech: ["React Native", "Tailwind CSS", "FastAPI", "AI", "Authentication", "Push Notifications", "Analytics"],
+      image: "https://github.com/Saketmishra565/My-Portfolio-2/blob/main/public/mood_tracker_app.png?raw=true", // <-- 🖼️ image added here
+      description: `Designed and developed a feature-rich mental health tracking app that enables users to log moods, track triggers, and visualize emotional patterns over time. Integrated AI-based features for mood prediction, pattern detection, and personalized coping suggestions.
 
-Impact:
-• Achieved fully automated SEO campaigns via multimedia content.
-• Scaled reach across replicated and white-labeled websites.
-• Boosted user engagement and keyword rankings.`
+Key Features:
+• Multi-color theme switching with 4 preset combinations.
+• User authentication with multipart profile creation capturing personal, professional, and lifestyle data.
+• Reminders, notifications, and motivational prompts to support emotional well-being.
+• Advanced analytics: Mood Forecast, Emotional DNA profile, Location-based mood tracking, and AI-powered mood copilot.
+• Gamification with mood streak challenges, badges, and interactive mood widgets.
+• Integration of music-mood correlation, mood journals with AI feedback, and social interaction tracking.
+
+Impact: Improved user engagement and self-awareness by offering 80+ unique mental health features, increasing daily active usage by fostering proactive mood management.`,
     },
     {
       name: "Portfolio Website",
@@ -30,14 +44,6 @@ Impact:
       tech: ["React", "FastAPI", "MongoDB", "JWT Auth"],
       description: "A fullstack CRUD app for managing personal notes securely with login/signup.",
     },
-    {
-      name: "MindfulMe Wellness",
-      link: "https://github.com/yourgithub/mindfulme",
-      Role: ["Full Stack Developer"],
-      tech: ["React", "Tailwind CSS", "FastAPI", "REST API", "ZenQuotes API", "MongoDB Atlas", "Authentication", "2FA", "CI/CD"],
-      image: "https://github.com/Saketmishra565/My-Portfolio-2/blob/main/public/mindfulme_screenshot.png?raw=true",
-      description: `Developed a responsive mental health web application for mood tracking, reminders, and progress analytics. Built reusable UI components using React and styled the interface with Tailwind CSS. Integrated FastAPI backend to handle CRUD operations for mood entries, reminders, and user profiles. Implemented RESTful APIs to store and retrieve user data securely. Designed a custom reminder system with support for daily and one-time events, including edit and delete functionality. Created interactive mood tracking interface with mood selection, trigger tags, and daily note input. Displayed weekly mood trends and user statistics using data visualization components. Integrated ZenQuotes API to display motivational quotes with a refresh feature. Captured user profile data across health, lifestyle, and personal attributes for personalized insights. Ensured mobile responsiveness, accessibility, and clean user experience across all devices.`
-    },
   ];
 
   // 🎨 Tech tag color mapping
@@ -51,6 +57,7 @@ Impact:
     "YouTube API": "bg-red-200 text-red-800",
     "PowerBI": "bg-pink-200 text-pink-800",
     "React": "bg-sky-200 text-sky-800",
+    "React Native": "bg-sky-300 text-sky-900",
     "Tailwind CSS": "bg-teal-200 text-teal-800",
     "TailwindCSS": "bg-teal-300 text-teal-900",
     "EmailJS": "bg-indigo-200 text-indigo-800",
@@ -63,6 +70,16 @@ Impact:
     "Authentication": "bg-gray-200 text-gray-800",
     "2FA": "bg-fuchsia-200 text-fuchsia-800",
     "CI/CD": "bg-blue-300 text-blue-900",
+    "AI": "bg-indigo-100 text-indigo-900",
+    "Gemini Flash 2.0": "bg-orange-100 text-orange-900",
+    "Gemini Flash 2.5": "bg-orange-200 text-orange-800",
+    "Gemini Pro 2.5": "bg-orange-300 text-orange-900",
+    "Gemini Flash Live": "bg-orange-400 text-white",
+    "Semrush": "bg-red-100 text-red-800",
+    "Google Search Console": "bg-green-100 text-green-800",
+    "Puppeteer": "bg-gray-100 text-gray-900",
+    "Push Notifications": "bg-yellow-100 text-yellow-800",
+    "Analytics": "bg-blue-100 text-blue-900",
   };
 
   return (
